@@ -174,7 +174,7 @@ class File
 	 * @throws Exception
 	 * @noinspection PhpUnused
 	 */
-	public function delete(int $fileId): stdClass
+	public function delete(int $fileId): stdClass|bool
 	{
 		$response = $this->request->get("deletefile", array("fileid" => $fileId));
 
